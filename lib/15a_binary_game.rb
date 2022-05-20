@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop: disable Layout/LineLength
-
 # require_relative '../lib/15c_random_number'
 # require_relative '../lib/15b_binary_search'
 
@@ -81,7 +79,7 @@ class BinaryGame
 
   def display_guess(binary_search)
     range = (@minimum..@maximum).to_a
-    sleep(2)
+    sleep(1.25)
     puts
     range.each do |number|
       print_number(binary_search.min, binary_search.max, number)
@@ -99,4 +97,3 @@ class BinaryGame
     end
   end
 end
-# rubocop: enable Layout/LineLength
